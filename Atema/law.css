@@ -1,0 +1,539 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --font-family: 'Sen', sans-serif;
+    --primary-color: #ffff;
+    --secondary-color: #001431;
+    --tertiary-color: #F8F2E2;
+    --color1: #00000000;
+    --color2: #E73232;
+
+}
+
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(90deg, #001431 62%, #f8f2e2 38%);
+}
+.navbar h1{
+    padding-left: 80px;
+    margin-top: -50px;
+    color: whitesmoke;
+}
+.nav-item {
+    text-align: center;
+}
+
+
+.linkcont {
+    width: 60%;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link {
+    border: 1px solid rgba(24, 1, 1, 0);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.nav-link:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.nav-link.active{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.logsch {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+.login {
+    display: flex;
+    width: 200px;
+}
+
+.login i {
+    margin-left: 35px;
+}
+
+.login i a {
+    padding: 10px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.login a:hover {
+    color: var(--primary-color);
+}
+
+.search {
+    display: flex;
+    justify-content: end;
+    margin-right: 28px;
+}
+
+.search a {
+    color: var(--secondary-color);
+    padding: 10px;
+}
+.search a:hover{
+    color: var(--primary-color);
+}
+
+/*we provide law practice*/
+
+.heading {
+    margin: 45px 0;
+    font-weight: bold;
+}
+
+.heading2 {
+    font-weight: bold;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+#A{
+    background: linear-gradient(90deg,  #001431 62%, #f8f2e2 38%);
+    height: 60vh;
+    width: 100%;
+    margin-top: 100px;
+    
+}
+
+
+.leftbanner {
+    width: 95%;
+    float: left;
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+.leftbanner h1 {
+    width: 90%;
+    font-size: 60px;
+    color: #fefefd;
+    font-weight: bold;
+}
+
+.contact {
+    margin-left: 10px;
+}
+.banner_pic {
+    width: 58%;
+    margin: 0 auto;
+    text-align: center;
+}
+.next1 {
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+    background-color:#E73232;
+    color: #ffff;
+    margin-top: -210px;
+}
+
+.next:hover {
+    background-color: #001431;
+}
+.prev1 {
+    position: absolute;
+    right: 0;
+    padding: 15px 20px;
+    background-color: #001431;;
+    color: #ffff;
+    opacity: 1;
+    margin-top: -150px;
+}
+
+
+/*3 boxes book at*/
+
+.box .row{
+    width: 78%;
+    height: 100px;
+    
+}
+
+.databox {
+    position: relative;
+    height: 110px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 5px #ededed;
+    top: -60px;
+    
+}
+.databox1{
+    position: relative;
+    height: 110px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 1px 3px 10px 5px #ededed;
+    top: -60px;
+    margin-right:-350px;
+}
+
+
+.row .active {
+    background-color: #E73232;
+}
+
+.row .active h6,
+.row .active h4 {
+    color: #ededed;
+}
+
+.boxvalue i {
+    padding: 18px;
+    border-radius: 50%;
+    background-color: #001431;
+    color: #ededed;  
+}
+.boxtexts {
+    margin-left: 20px;
+}
+
+.boxtexts h6 {
+    font-weight: bold;
+    color: var(--color2);
+}
+
+.boxtexts h4 {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/*Service offerings*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+  display: none; /* Hide all slides by default */
+}
+
+.mySlides:first-child {
+  display: block; /* Display only the first slide */
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1450px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color:white;
+  background-color: #001431;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 50%;
+  user-select: none;
+}
+.prev{
+    margin-left: 100px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right: 50px;
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 36000s;
+}
+
+@keyframes fade {
+  from {opacity: 4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+/*   real code */
+
+.servicek{
+  text-align: center;
+  font-family:Copperplate;
+  padding-top: 40px;
+ 
+}
+#service {
+  width: 100%;
+  background-color: var(--tertiary-color);
+}
+
+.servitems {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.servitems h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#op{
+  background-color: #001431;
+  border: #001431;
+}
+#op1{
+  background-color: #E73232;
+  border: #E73232;
+}
+#kp{
+  margin-left: 130px;
+}
+#im{
+  margin-right: 80px;
+}
+.center h3,
+.center p {
+  color: var(--color2);
+}
+#ok1{
+  color:#001431;
+}
+
+
+
+
+/*recent case studies*/
+.service1{
+    text-align: center;
+    font-family:Copperplate;
+    padding-top: 40px;
+   
+}
+#hiya{
+    margin-left: 190px;
+}
+#hi1 img{
+    height: 215px;
+}
+#bt0{
+    background-color: #001431;
+    border:#001431;
+}
+#bt1{
+    background-color: #E73232;
+    border: #E73232;
+}
+
+/*about us*/
+#cont{
+    background-color:#001431;
+    width:100%;
+}
+#cont1{
+    margin-left: 650px;
+    margin-top: -120px;
+    padding-bottom: 100px;
+}
+#cont1 h2,p{
+    color:white;
+}
+.cont0 img{
+    width: 30%;
+    height:80%;
+    margin-top: 100px;
+    margin-bottom: -100px;
+    margin-left: 140px;
+}
+/*satisfied client stories*/
+.sat{
+    text-align: center;
+    font-family:Copperplate;
+    padding-top: 40px;
+}
+#sat1 img{
+    width: 270px;
+    height:295px;
+   margin-top: 60px;
+   margin-bottom: -120px;
+   margin-left: 160px;
+   position: relative;
+   padding-top: 100px;
+}
+#sat2{
+    margin-left: 600px;
+    margin-top: -100px;
+}
+#sat2 h2{
+    color:#E73232;
+}
+#sat2 p{
+    width:100%;
+    font-size: large;
+}
+#sat2 img{
+    height: 20px;
+    margin-top: -90px;
+    margin-left: 500px;
+}
+#sat3{
+    position:absolute;
+    width: 900px;
+    height: 250px;
+    margin-top: -200px;
+    margin-bottom: 20px;
+}
+#bn1{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    padding: 16px 19px;
+    position:absolute;
+    margin-top: -180px;
+    margin-left: 60px;
+    
+}
+#bn2{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    padding: 16px 19px;
+    position:absolute;
+    margin-left: 1230px;
+    margin-top: -180px;
+}
+
+/*Recent news*/
+#c1{
+    margin-left: 300px;
+    width:50%;
+    padding-bottom: 40px;
+    align-items:center;
+    font-size: 16px;
+    
+}
+#c1 i{
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: #E73232;
+    padding: 16px 19px;
+    position:absolute;
+    margin-left: 20px;
+    margin-top: 500px;
+}
+#c1 i:hover{
+    color: var(--primary-color);
+    background:#001431;
+}
+/*free consulataion*/
+#bt3{
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+/*atema*/
+#flu1{
+    border-radius: 50%;
+    background: #E73232;
+    padding: 16px 19px;
+    margin-top: 70px;
+    
+}
+#flu2{
+    border-radius: 50%;
+    background: #E73232;
+    padding: 16px 19px;
+    margin-top: 70px;
+    
+}
+#flu3{
+    border-radius: 50%;
+    background: #E73232;
+    padding: 16px 19px;
+    margin-top: 70px;
+}
+#icon{
+    margin-left: 500px;
+}
+.logo{
+    margin-left: 600px;
+    margin-top: 70px;
+}
+.logo h1{
+  padding-left: 100px;
+  margin-top: -50px;
+}
+#icon2{
+    margin-left: 600px;
+    margin-top: 70px;  
+}
+.end{
+    padding-left: 500px;
+}
+#cont4{
+    background-color: #001431;
+    color: #ededed;
+    height: 450px;
+}
