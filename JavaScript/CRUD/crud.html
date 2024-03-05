@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crud.css">
+</head>
+<body>
+    <div class="abc" >
+        <p>Employee Name</p>
+        <input type="text" class="len js-name-input">
+
+        <p>Employee ID</p>
+        <input type="email" class="len js-id-input">
+        <p>Employee Designation</p>
+        <select class="len js-designation-input"required>
+            <option value="">Select Designation</option>
+            <option value="CEO">CEO</option>
+            <option value="Manager">Manager</option>
+            <option value="Associate">Associate</option>
+            <option value="Tech Lead">Tech Lead</option>
+            <option value="Technical Specialist">Technical Specialist</option>
+        </select>
+        <p>Employee DOB</p>
+        <input type="date" class="len js-date-input">
+        <p>Employee Gender</p>
+<div class="len">
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label>
+</div>
+        <br>
+        <button class="btn js-add-crud-button" type="button">Submit</button>
+    </div>
+    <div class="output">
+        <label for="searchName">Search by Name:</label>
+        <input type="text" id="searchName" class="len1">
+        <button class="btn2" id="searchButton">Search</button>
+        <br>
+        <br>
+        <label for=" ">Filter by Designation:</label>
+        <input type="text" class="len2 js-designation-filter">
+        <button class="btn2 js-filter-button">Apply Filter</button>
+        <br><br>
+        <div class="heading">
+        <h4>Full Name</h4>
+        <h4>Email ID</h4>
+        <h4>Desgination</h4>
+        <h4>D-O-B</h4>
+        <h4>Gender</h4>
+        <h4>Actions</h4>
+        </div>
+        <div class="js-list crud-grid"></div>
+    </div>
+   <script src="crud.js"></script>
+</body>
+</html>

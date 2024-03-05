@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  body{
+    font-family: Arial;
+  }
+ .subscribe-button{
+    border:none;
+    background-color: black;
+    color:white;
+    padding:10px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 30px;
+ }
+ .is-subscribed{
+    background-color: rgb(240,240,240);
+    color:black;
+ }
+ .cost-input{
+    font-size: 15px;
+    padding:10px;
+ }
+ .calculate-button{
+    background-color: green;
+    color:white;
+    border:none;
+    font-size: 15px;
+    padding: 12px 15px;
+    cursor: pointer;
+ }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Youtube subscribe button</p>
+    <button onclick="subscribe()" class="js-subscribe-button subscribe-button">Subscribe</button>
+    <p>Amazon shipping calculator</p>
+    <input  placeholder="Cost of order" 
+    class="js-class-input cost-input" onkeydown= "handleCostkey(event)">
+    <button onclick="calculate();" class="calculate-button">Calculate
+    </button>
+    <p class="total-cost"></p>
+    <script>
+        function handleCostkey(event){
+            if(event.key==='Enter'){
+                calculate();  
+            }
+        }
+        function calculate(){
+            const inputelement =document.querySelector('.js-class-input');
+            let cost=Number(inputelement.value);
+            if(cost < 40){
+                cost=cost+10;
+            }
+            document.querySelector('.total-cost').innerHTML=`$${cost}`;
+        }
+        function subscribe(){
+        const k=document.querySelector('.js-subscribe-button');
+        if(k.innerText === 'Subscribe'){
+            k.innerHTML = 'Subscribed';
+            k.classList.add('is-subscribed');
+        }
+        else{
+            k.innerHTML = 'Subscribe';
+            k.classList.remove('is-subscribed');
+        }
+        }
+    </script>
+</body>
+</html>
